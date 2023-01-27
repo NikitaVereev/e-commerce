@@ -1,0 +1,35 @@
+.header {
+	@apply max-w-7xl mx-auto py-7 flex justify-between items-center text-gray;
+	.nav {
+		ul {
+			@apply flex gap-5 text-lg;
+			li {
+				a {
+					@apply hover:text-orange;
+					transition: 0.5s ease;
+				}
+			}
+		}
+	}
+	.nav_user {
+		ul {
+			@apply flex gap-5 text-lg;
+			li {
+				button {
+					svg {
+						@apply text-2xl;
+					}
+				}
+				&.active > div {
+					@apply right-0;
+				}
+				> div {
+					@apply absolute  min-w-[320px] min-h-full top-0 rounded-2xl -right-full;
+					background: rgba(0, 0, 0, 0.3);
+					backdrop-filter: blur(20px);
+					transition: 0.5s ease;
+				}
+			}
+		}
+	}
+}

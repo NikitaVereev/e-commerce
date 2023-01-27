@@ -1,0 +1,8 @@
+.circle {
+	@apply w-52 h-52 bg-orange rounded-full absolute top-1/4 left-44;
+	filter: blur(150px);
+}
+.circle:nth-child(2) {
+	@apply w-52 h-52 bg-orange rounded-full absolute top-full left-auto right-0;
+	filter: blur(270px);
+}
