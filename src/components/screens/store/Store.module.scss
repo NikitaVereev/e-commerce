@@ -6,3 +6,17 @@
 	@apply w-52 h-52 bg-orange rounded-full absolute top-full left-auto right-0;
 	filter: blur(270px);
 }
+.wrapper {
+	@apply max-w-7xl mx-auto flex items-center justify-between;
+	.filter {
+		@apply flex flex-col gap-2 py-8 px-7 w-1/4  relative z-10 rounded-3xl;
+		backdrop-filter: blur(20px);
+		background: rgba(49, 49, 49, 0.5);
+		h2 {
+			@apply pb-4 text-white font-semibold text-xl;
+		}
+		label {
+			@apply flex flex-row-reverse items-center justify-end gap-3;
+		}
+	}
+}

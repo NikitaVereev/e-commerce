@@ -24,10 +24,31 @@
 					@apply right-0;
 				}
 				> div {
-					@apply absolute  min-w-[320px] min-h-full top-0 rounded-2xl -right-full;
+					@apply absolute  w-1/3 min-h-full top-0 rounded-2xl -right-full z-40;
 					background: rgba(0, 0, 0, 0.3);
 					backdrop-filter: blur(20px);
 					transition: 0.5s ease;
+					.wrapper {
+						@apply p-5;
+						.popupTitle {
+							@apply flex justify-between pb-3 mb-8 border-gray;
+							border-bottom: 2px solid;
+							> h2 {
+								@apply font-bold;
+							}
+							> button {
+								> svg {
+									@apply text-gray font-bold cursor-pointer text-3xl;
+									transition: 0.5s ease;
+
+									&:hover {
+										@apply text-orange;
+										transform: scale(1.2);
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}

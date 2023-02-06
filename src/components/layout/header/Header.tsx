@@ -1,16 +1,14 @@
 import Link from 'next/link'
 import { FC, useState } from 'react'
 import styles from './Header.module.scss'
-import { FiShoppingCart } from 'react-icons/fi'
+
 import { RiHeart3Line } from 'react-icons/ri'
 import { CgClose } from 'react-icons/cg'
+import Cart from './cart/Cart'
 
 const Header: FC = () => {
-	const [openBasket, setOpenBasket] = useState(false)
 	const [openFavorites, setOpenFavorites] = useState(false)
-	const basketClick = (e: never) => {
-		setOpenBasket(current => !current)
-	}
+
 	const favoriteClick = (e: never) => {
 		setOpenFavorites(current => !current)
 	}
@@ -47,21 +45,7 @@ const Header: FC = () => {
 			</nav>
 			<nav className={styles.nav_user}>
 				<ul>
-					<li className={openBasket ? styles.active : ''} onClick={basketClick}>
-						<button>
-							<FiShoppingCart />
-						</button>
-						<div>
-							<div className={styles.nav_user_basket}>
-								<div className={styles.basket_title}>
-									<h2>Basket</h2>
-									<button onClick={() => setOpenBasket(true)}>
-										<CgClose />
-									</button>
-								</div>
-							</div>
-						</div>
-					</li>
+					<Cart />
 					<li
 						className={openFavorites ? styles.active : ''}
 						onClick={favoriteClick}

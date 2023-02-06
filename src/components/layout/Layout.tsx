@@ -1,8 +1,8 @@
-import { IChildren } from '@/src/utils/types'
+import { TChildren } from '@/src/components/types/types'
 import { FC } from 'react'
 import Header from './header/Header'
 
-const Layout: FC<IChildren> = ({ children }) => {
+const Layout: FC<TChildren> = ({ children }) => {
 	return (
 		<>
 			<Header />

@@ -1,0 +1,10 @@
+.btn {
+	@apply bg-orange py-3 w-full rounded-3xl text-black font-bold border-none;
+	transition: 0.5s ease;
+	&:hover {
+		@apply tracking-widest bg-black text-orange;
+		outline: 2px solid #e58e27;
+
+		outline-offset: 5px;
+	}
+}

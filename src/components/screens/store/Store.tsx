@@ -1,14 +1,12 @@
-import { FC, useState } from 'react'
-import CardItem from './card/CardItem'
-import Filter from './filter/Filter'
+import { FC } from 'react'
 
 import styles from './Store.module.scss'
+import StoreContent from './StoreContent'
 
 const Store: FC = () => {
 	return (
 		<div className={styles.store}>
-			<Filter />
-
+			<StoreContent />
 			<div className={styles.circle}></div>
 			<div className={styles.circle}></div>
 		</div>

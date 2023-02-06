@@ -10,12 +10,16 @@ const constants = {
 }
 module.exports = {
 	content: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
+	important: '#__next',
 	theme: {
 		colors: {
 			transparent: colors.transparent,
 			...constants
 		},
 		extend: {}
+	},
+	corePlugins: {
+		preflight: false
 	},
 	plugins: []
 }

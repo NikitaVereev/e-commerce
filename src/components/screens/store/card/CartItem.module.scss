@@ -1,0 +1,34 @@
+.title {
+	@apply mb-4 text-[4vw] pb-2 border-b-2;
+}
+.cart {
+	@apply relative flex gap-6 flex-wrap;
+	.cartWrapper {
+		@apply relative w-72 h-fit  p-5 overflow-hidden rounded-2xl;
+		transition: 0.5s ease;
+		backdrop-filter: blur(20px);
+		background: rgba(49, 49, 49, 0.5);
+		&:hover {
+			@apply p-3;
+		}
+
+		.image {
+			@apply relative mx-auto;
+			> img {
+				@apply object-contain w-full h-full bg-center rounded-2xl pointer-events-none;
+			}
+		}
+		> h3 {
+			@apply text-2xl py-4;
+		}
+		> p {
+			@apply text-xl text-gray;
+		}
+		.price {
+			@apply flex gap-4 items-center;
+			> p {
+				@apply text-2xl text-orange;
+			}
+		}
+	}
+}
