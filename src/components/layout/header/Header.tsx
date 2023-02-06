@@ -5,6 +5,7 @@ import styles from './Header.module.scss'
 import { RiHeart3Line } from 'react-icons/ri'
 import { CgClose } from 'react-icons/cg'
 import Cart from './cart/Cart'
+import Favorite from './favorite/Favorite'
 
 const Header: FC = () => {
 	const [openFavorites, setOpenFavorites] = useState(false)
@@ -46,24 +47,7 @@ const Header: FC = () => {
 			<nav className={styles.nav_user}>
 				<ul>
 					<Cart />
-					<li
-						className={openFavorites ? styles.active : ''}
-						onClick={favoriteClick}
-					>
-						<button>
-							<RiHeart3Line />
-						</button>
-						<div>
-							<div className={styles.nav_user_basket}>
-								<div className={styles.basket_title}>
-									<h2>Favorites</h2>
-									<button onClick={() => setOpenFavorites(true)}>
-										<CgClose />
-									</button>
-								</div>
-							</div>
-						</div>
-					</li>
+					<Favorite />
 					<li></li>
 				</ul>
 			</nav>

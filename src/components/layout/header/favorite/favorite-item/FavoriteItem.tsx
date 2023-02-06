@@ -1,10 +1,10 @@
 import { ICart } from '@/src/components/types/cart.interface'
 import { FC } from 'react'
 import Image from 'next/dist/client/image'
-import styles from './CartItem.module.scss'
-import { RiDeleteBin6Fill } from 'react-icons/ri'
+import styles from './FavoriteItem.module.scss'
+import { MdOutlineFavorite } from 'react-icons/md'
 
-const CartItem: FC<{ item: ICart }> = ({ item }) => {
+const FavoriteItem: FC<{ item: ICart }> = ({ item }) => {
 	return (
 		<div className={styles.item}>
 			<Image
@@ -22,9 +22,9 @@ const CartItem: FC<{ item: ICart }> = ({ item }) => {
 					}).format(item.product.price)}
 				</span>
 			</div>
-			<RiDeleteBin6Fill />
+			<MdOutlineFavorite />
 		</div>
 	)
 }
 
-export default CartItem
+export default FavoriteItem

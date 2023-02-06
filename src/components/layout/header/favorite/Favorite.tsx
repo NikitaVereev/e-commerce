@@ -1,11 +1,11 @@
-import { cart } from '@/src/data/cart.data'
+import { favorite } from '@/src/data/favorite.data'
 import { FC, useState } from 'react'
 import { FaWindowClose } from 'react-icons/fa'
-import { FiShoppingCart } from 'react-icons/fi'
+import { RiHeart3Line } from 'react-icons/ri'
 import styles from '../Header.module.scss'
-import CartItem from './cart-item/CartItem'
+import FavoriteItem from './favorite-item/FavoriteItem'
 
-const Cart: FC = () => {
+const Favorite: FC = () => {
 	const [openBasket, setOpenBasket] = useState(false)
 
 	const handleClick = (e: React.MouseEvent<HTMLElement>) => {
@@ -14,20 +14,20 @@ const Cart: FC = () => {
 	return (
 		<li className={openBasket ? styles.active : ''} onClick={handleClick}>
 			<button>
-				<FiShoppingCart />
+				<RiHeart3Line />
 				<span>0</span>
 			</button>
 			<div>
 				<div className={styles.wrapper}>
 					<div className={styles.popupTitle}>
-						<h2>Basket</h2>
+						<h2>Favorite</h2>
 						<button onClick={() => setOpenBasket(true)}>
 							<FaWindowClose />
 						</button>
 					</div>
 					<div className={styles.itemWrapper}>
-						{cart.map(item => (
-							<CartItem key={item.id} item={item} />
+						{favorite.map(item => (
+							<FavoriteItem key={item.id} item={item} />
 						))}
 					</div>
 				</div>
@@ -36,4 +36,4 @@ const Cart: FC = () => {
 	)
 }
 
-export default Cart
+export default Favorite

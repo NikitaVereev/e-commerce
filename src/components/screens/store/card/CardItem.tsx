@@ -27,7 +27,12 @@ const CardItem: FC = ({ products }: any) => {
 						<h3>{item.name}</h3>
 						<p>{item.platforms}</p>
 						<div className={styles.price}>
-							<p>${item.price}</p>
+							<p>
+								{new Intl.NumberFormat('en-US', {
+									style: 'currency',
+									currency: 'USD'
+								}).format(item.price)}
+							</p>
 							<Button onClick={() => {}}>Add</Button>
 						</div>
 					</div>
