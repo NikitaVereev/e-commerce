@@ -11,14 +11,17 @@ const cache = createCache({
 
 import '@/styles/globals.scss'
 import Layout from '@/src/components/layout/Layout'
+import { store } from '@/src/components/store/store'
 
 const App = ({ Component, pageProps }: AppProps) => {
 	return (
-		<CacheProvider value={cache}>
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
-		</CacheProvider>
+		<Provider store={store}>
+			<CacheProvider value={cache}>
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
+			</CacheProvider>
+		</Provider>
 	)
 }
 export default App

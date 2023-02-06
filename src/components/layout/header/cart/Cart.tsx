@@ -1,4 +1,5 @@
 import { cart } from '@/src/data/cart.data'
+import { useTypedSelector } from '@/src/hooks/useTypedSelector'
 import { FC, useState } from 'react'
 import { FaWindowClose } from 'react-icons/fa'
 import { FiShoppingCart } from 'react-icons/fi'
@@ -6,13 +7,17 @@ import styles from '../Header.module.scss'
 import CartItem from './cart-item/CartItem'
 
 const Cart: FC = () => {
+	const state = useTypedSelector(state => state.cart.items)
 	const [openBasket, setOpenBasket] = useState(false)
 
 	const handleClick = (e: React.MouseEvent<HTMLElement>) => {
 		setOpenBasket(current => !current)
 	}
 	return (
-		<li className={openBasket ? styles.active : ''} onClick={handleClick}>
+		<li
+			className={openBasket ? styles.active : ''}
+			onClick={() => setOpenBasket(true)}
+		>
 			<button>
 				<FiShoppingCart />
 				<span>0</span>
