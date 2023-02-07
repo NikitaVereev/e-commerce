@@ -1,12 +1,13 @@
 import { FC } from 'react'
+import { IProduct } from '../../types/product.types'
 
 import styles from './Store.module.scss'
 import StoreContent from './StoreContent'
 
-const Store: FC = () => {
+const Store: FC<{ products: IProduct[] }> = ({ products }) => {
 	return (
 		<div className={styles.store}>
-			<StoreContent />
+			<StoreContent products={products} />
 			<div className={styles.circle}></div>
 			<div className={styles.circle}></div>
 		</div>

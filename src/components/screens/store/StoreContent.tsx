@@ -1,10 +1,11 @@
 import { products } from '@/src/data/product.data'
 import { FC } from 'react'
+import { IProduct } from '../../types/product.types'
 import Button from '../../ui/button/Button'
 import CardItem from './card/CardItem'
 import styles from './Store.module.scss'
 
-const StoreContent: FC = () => {
+const StoreContent: FC<{ products: IProduct[] }> = ({ products }) => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.filter}>
@@ -13,10 +14,10 @@ const StoreContent: FC = () => {
 				<Button>Apply Filters</Button>
 			</div>
 			<div className={styles.content}>
-				<CardItem
-					//@ts-ignore
-					products={products}
-				/>
+				<h1 className={styles.title}>Games</h1>
+				{products.map(product => (
+					<CardItem key={product.id} product={product} />
+				))}
 			</div>
 		</div>
 	)
