@@ -15,7 +15,28 @@ export const products: IProduct[] = [
 			title: 'An authentic Spider-Man adventure',
 			description: `Sony Interactive Entertainment, Insomniac Games, and Marvel have teamed up to create an authentic Spider-Man adventure. This isn’t the Spider-Man you’ve met or ever seen before. This is an experienced Peter Parker who’s more masterful at fighting big crime in Marvel's New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of millions of New Yorkers rest upon his shoulders.`
 		},
-		price: 39
+		price: 39,
+		publisher: 'Sony Interactive Entertainment Europe',
+		description: `Hunt your nightmares
+A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
+		voice: ['English', 'French(France)', 'German', 'Italian', 'Spanish'],
+		screenLanguages: [
+			'Danish',
+			'Dutch',
+			'English',
+			'Finnish',
+			'French(France)',
+			'German',
+			'Italian',
+			'Norwegian',
+			'Polish',
+			'Portuguese(Portugal)',
+			'Russian',
+			'Spanish',
+			'Swedish',
+			'Turkish'
+		],
+		video: 'https://youtu.be/G203e1HhixY'
 	},
 	{
 		id: 2,
@@ -35,7 +56,28 @@ Joined by Six, the raincoat wearing hero from the original Little Nightmares, on
 
 Muster your courage and begin your journey in the face of terrible threats in a mission to stop the source of evil that’s spreading throughout the land.`
 		},
-		price: 29
+		price: 29,
+		publisher: 'Sony Interactive Entertainment Europe',
+		description: `Hunt your nightmares
+A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
+		voice: ['English', 'French(France)', 'German', 'Italian', 'Spanish'],
+		screenLanguages: [
+			'Danish',
+			'Dutch',
+			'English',
+			'Finnish',
+			'French(France)',
+			'German',
+			'Italian',
+			'Norwegian',
+			'Polish',
+			'Portuguese(Portugal)',
+			'Russian',
+			'Spanish',
+			'Swedish',
+			'Turkish'
+		],
+		video: 'https://youtu.be/G203e1HhixY'
 	},
 	{
 		id: 3,
@@ -51,6 +93,27 @@ Muster your courage and begin your journey in the face of terrible threats in a 
 			title: 'An authentic Spider-Man adventure',
 			description: `Sony Interactive Entertainment, Insomniac Games, and Marvel have teamed up to create an authentic Spider-Man adventure. This isn’t the Spider-Man you’ve met or ever seen before. This is an experienced Peter Parker who’s more masterful at fighting big crime in Marvel's New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of millions of New Yorkers rest upon his shoulders.`
 		},
-		price: 19
+		price: 19,
+		publisher: 'Sony Interactive Entertainment Europe',
+		description: `Hunt your nightmares
+A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
+		voice: ['English', 'French(France)', 'German', 'Italian', 'Spanish'],
+		screenLanguages: [
+			'Danish',
+			'Dutch',
+			'English',
+			'Finnish',
+			'French(France)',
+			'German',
+			'Italian',
+			'Norwegian',
+			'Polish',
+			'Portuguese(Portugal)',
+			'Russian',
+			'Spanish',
+			'Swedish',
+			'Turkish'
+		],
+		video: 'https://youtu.be/G203e1HhixY'
 	}
 ]

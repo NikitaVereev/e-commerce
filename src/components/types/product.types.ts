@@ -13,4 +13,9 @@ export interface IProduct {
 	pageImg: string
 	review: IReview
 	price: number
+	publisher: string
+	description?: string
+	voice: string[]
+	screenLanguages: string[]
+	video: string
 }

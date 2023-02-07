@@ -1,6 +1,7 @@
+import { categories } from '@/src/data/categories.data'
 import { FC } from 'react'
 import { IProduct } from '../../types/product.types'
-import Button from '../../ui/button/Button'
+import CatalogFilter from './catalog-filter/CatalogFilter'
 import CatalogItem from './catalog-item/CatalogItem'
 import styles from './GameStore.module.scss'
 
@@ -9,8 +10,7 @@ const Catalog: FC<{ products: IProduct[] }> = ({ products }) => {
 		<div className={styles.wrapper}>
 			<div className={styles.filter}>
 				<h2 className={styles.title}>Categories</h2>
-
-				<Button>Apply Filters</Button>
+				<CatalogFilter />
 			</div>
 			<div className={styles.content}>
 				<h1 className={styles.title}>Games</h1>

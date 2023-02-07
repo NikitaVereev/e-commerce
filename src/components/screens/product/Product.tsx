@@ -1,8 +1,42 @@
+import { IProductDetails } from '@/pages/product/[slug]'
+import { useActions } from '@/src/hooks/useActions'
+import Image from 'next/image'
 import { FC } from 'react'
-import { games } from '@/src/data/product.data'
+import Button from '../../ui/button/Button'
+import styles from './Product.module.scss'
 
-const Product: FC = () => {
-	return <div>ddd</div>
+const Product: FC<IProductDetails> = ({ product }) => {
+	const { addDoCart, removeFromCart } = useActions()
+	return (
+		<>
+			<div className={styles.heading}>
+				<Image
+					src={product.pageImg}
+					alt={product.name}
+					width={1000}
+					height={100}
+				/>
+
+				<div className={styles.card}>
+					<h1>{product.name}</h1>
+					<p className={styles.publisher}>{product.publisher}</p>
+					<p className={styles.platforms}>{product.platforms}</p>
+					<p>{product.price}</p>
+					<Button onClick={() => addDoCart({ product, quantity: 1 })}>
+						Add to Cart
+					</Button>
+				</div>
+			</div>
+			<div className={styles.description}>{product.description}</div>
+			<div className={styles.info}>
+				<p>{product.platforms}</p>
+				<p>{product.publisher}</p>
+				<p>{product.type}</p>
+				<p>{product.voice}</p>
+				<p>{product.screenLanguages}</p>
+			</div>
+		</>
+	)
 }
 
 export default Product
