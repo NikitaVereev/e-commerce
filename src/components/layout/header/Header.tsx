@@ -25,7 +25,7 @@ const Header: FC = () => {
 		},
 		{
 			name: 'Game Store',
-			link: '/store'
+			link: '/game-store'
 		},
 		{
 			name: 'News',

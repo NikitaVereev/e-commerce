@@ -15,11 +15,8 @@ const Cart: FC = () => {
 	)
 
 	return (
-		<li
-			className={openBasket ? styles.active : ''}
-			onClick={() => setOpenBasket(!openBasket)}
-		>
-			<button>
+		<li className={openBasket ? styles.active : ''}>
+			<button onClick={() => setOpenBasket(!openBasket)}>
 				<FiShoppingCart />
 				<span>{state.length}</span>
 			</button>

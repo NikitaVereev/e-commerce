@@ -19,4 +19,12 @@
 			@apply flex flex-row-reverse items-center justify-end gap-3;
 		}
 	}
+	.content {
+		.title {
+			@apply mb-4 text-[4vw] pb-2 border-b-2;
+		}
+		.catalog {
+			@apply flex gap-5 flex-wrap;
+		}
+	}
 }

@@ -1,9 +1,9 @@
-import Store from '@/src/components/screens/store/Store'
+import GameStore from '@/src/components/screens/game-store/GameStore'
 import { products } from '@/src/data/product.data'
 import { FC } from 'react'
 
 const store: FC = () => {
-	return <Store products={products} />
+	return <GameStore products={products} />
 }
 
 export default store
