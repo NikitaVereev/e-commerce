@@ -5,11 +5,23 @@ import { IFilter } from '../../../types/categories.interface'
 import Categories from './categories/Categories'
 import Platforms from './platforms/Platforms'
 
-const CatalogFilter: FC<IFilter> = ({ categories, platforms }) => {
+interface IFilterList extends IFilter {
+	changeChecked: (x: number) => void
+}
+
+const CatalogFilter: FC<IFilterList> = ({
+	changeChecked,
+	categories,
+	platforms
+}) => {
 	return (
 		<ul>
 			{categories.map(category => (
-				<Categories key={category.id} category={category} />
+				<Categories
+					key={category.id}
+					category={category}
+					changeChecked={changeChecked}
+				/>
 			))}
 			{platforms.map(platform => (
 				<Platforms key={platform.id} platform={platform} />

@@ -5,47 +5,56 @@ export const filterList: IFilter = {
 		{
 			id: 1,
 			name: 'Indy',
-			type: 'indy'
+			type: 'indy',
+			checked: false
 		},
 		{
 			id: 2,
 			name: 'Adventure',
-			type: 'adventure'
+			type: 'adventure',
+			checked: false
 		},
 		{
 			id: 3,
 			name: 'MMO',
-			type: 'mmo'
+			type: 'mmo',
+			checked: false
 		},
 		{
 			id: 4,
 			name: 'Casual Game',
-			type: 'casual-game'
+			type: 'casual-game',
+			checked: false
 		},
 		{
 			id: 5,
 			name: 'Strategy',
-			type: 'strategy'
+			type: 'strategy',
+			checked: false
 		},
 		{
 			id: 6,
 			name: 'Indy',
-			type: 'indy'
+			type: 'indy',
+			checked: false
 		},
 		{
 			id: 7,
 			name: 'Simulator',
-			type: 'simulator'
+			type: 'simulator',
+			checked: false
 		},
 		{
 			id: 8,
 			name: 'Sports Game',
-			type: 'sports-game'
+			type: 'sports-game',
+			checked: false
 		},
 		{
 			id: 9,
 			name: 'Action Game',
-			type: 'action-game'
+			type: 'action-game',
+			checked: false
 		}
 	],
 	platforms: [
