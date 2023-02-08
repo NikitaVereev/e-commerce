@@ -3,6 +3,7 @@ import { useActions } from '@/src/hooks/useActions'
 import Image from 'next/image'
 import { FC } from 'react'
 import Button from '../../ui/button/Button'
+import { RiHeart3Line } from 'react-icons/ri'
 import styles from './Product.module.scss'
 
 const Product: FC<IProductDetails> = ({ product }) => {
@@ -21,10 +22,18 @@ const Product: FC<IProductDetails> = ({ product }) => {
 					<h1>{product.name}</h1>
 					<p className={styles.publisher}>{product.publisher}</p>
 					<p className={styles.platforms}>{product.platforms}</p>
-					<p>{product.price}</p>
-					<Button onClick={() => addDoCart({ product, quantity: 1 })}>
-						Add to Cart
-					</Button>
+					<p>
+						{new Intl.NumberFormat('en-US', {
+							style: 'currency',
+							currency: 'USD'
+						}).format(product.price)}
+					</p>
+					<div className={styles.buttons}>
+						<Button onClick={() => addDoCart({ product, quantity: 1 })}>
+							Add to Cart
+						</Button>
+						<RiHeart3Line />
+					</div>
 				</div>
 			</div>
 			<div className={styles.description}>{product.description}</div>

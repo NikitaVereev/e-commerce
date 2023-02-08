@@ -1,4 +1,4 @@
-import { ICart } from '../types/cart.interface'
+import { ICart } from '../../types/cart.interface'
 
 export interface IItem {
 	product: string

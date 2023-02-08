@@ -18,5 +18,14 @@
 		.publisher {
 			@apply py-3 text-gray text-xl;
 		}
+		.platforms {
+			@apply py-1 px-2 border-2 border-gray border-solid w-fit rounded-md;
+		}
+		.buttons {
+			@apply flex gap-6 items-center;
+			> button {
+				@apply w-1/2;
+			}
+		}
 	}
 }
