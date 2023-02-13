@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux'
-
+import NextNProgress from 'nextjs-progressbar'
 import { CacheProvider } from '@emotion/react'
 import createCache from '@emotion/cache'
 import type { AppProps } from 'next/app'
@@ -18,6 +18,13 @@ const App = ({ Component, pageProps }: AppProps) => {
 		<Provider store={store}>
 			<CacheProvider value={cache}>
 				<Layout>
+					<NextNProgress
+						color='#e58e27'
+						startPosition={0.3}
+						stopDelayMs={200}
+						height={4}
+						showOnShallow={true}
+					/>
 					<Component {...pageProps} />
 				</Layout>
 			</CacheProvider>

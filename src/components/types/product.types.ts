@@ -18,4 +18,6 @@ export interface IProduct {
 	voice: string[]
 	screenLanguages: string[]
 	video: string
+	images: string[]
+	secondImg: string
 }

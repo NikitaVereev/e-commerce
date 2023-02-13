@@ -1,0 +1,13 @@
+.wrapper {
+	@apply flex items-center flex-row-reverse w-full mx-auto  py-20 px-10 relative  rounded-2xl overflow-hidden;
+	background-size: 50%;
+	background-position: center;
+	&::before {
+		content: '';
+		@apply absolute inset-0 w-full h-full bg-black bg-opacity-80;
+		backdrop-filter: blur(5px);
+	}
+	.description {
+		@apply w-2/5 relative z-10;
+	}
+}

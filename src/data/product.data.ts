@@ -8,9 +8,9 @@ export const products: IProduct[] = [
 		type: 'action-game',
 		platforms: ['PS4'],
 		frontImg:
-			'https://image.api.playstation.com/cdn/UP9000/CUSA02299_00/9EixLCyiU8I5t0QWLcv75aZO3OfjVdpd.png?w=440&thumb=false',
+			'https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png',
 		pageImg:
-			'https://image.api.playstation.com/cdn/UP9000/CUSA02299_00/mrNNgNatLCcuwPhZa6UGKNHtSDIhoq2N.jpg?w=5000&thumb=false',
+			'https://gmedia.playstation.com/is/image/SIEPDC/spiderman-miles-morales-hero-03-en-20jul20',
 		review: {
 			title: 'An authentic Spider-Man adventure',
 			description: `Sony Interactive Entertainment, Insomniac Games, and Marvel have teamed up to create an authentic Spider-Man adventure. This isn’t the Spider-Man you’ve met or ever seen before. This is an experienced Peter Parker who’s more masterful at fighting big crime in Marvel's New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of millions of New Yorkers rest upon his shoulders.`
@@ -36,8 +36,15 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 			'Swedish',
 			'Turkish'
 		],
-		video: 'https://youtu.be/G203e1HhixY'
+		video:
+			'https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/s/sp/spiderman-miles-morales/video/spider-man-miles-morales-hero-video-01-15sec-720-web-en-06jul20.mp4',
+		images: [
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-07-ps4-us-03oct16?$100px$'
+		],
+		secondImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-05-us-15jun15?$800px--t$'
 	},
+
 	{
 		id: 2,
 		name: 'Little Nightmares ||',
@@ -47,7 +54,7 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 		frontImg:
 			'https://image.api.playstation.com/vulcan/ap/rnd/202204/0416/e4pNnBSfhs0LIr8MHBfEcS6b.png?w=440&thumb=false',
 		pageImg:
-			'https://image.api.playstation.com/vulcan/ap/rnd/202204/0416/oNJh0yy7C5AJl26p5AxrpYR6.jpg?w=5000&thumb=false',
+			'https://gmedia.playstation.com/is/image/SIEPDC/little-nightmares-2-huge-hero-desktop-tablet-01-ps4-en-13sep19?$4000px$',
 		review: {
 			title: 'Become a guiding light in the terrifying night ',
 			description: `Discover the sinister secrets of The Signal Tower in this horror-themed platform adventure where you control Mono, a young boy trapped in a distorted and broken world.
@@ -77,7 +84,12 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 			'Swedish',
 			'Turkish'
 		],
-		video: 'https://youtu.be/G203e1HhixY'
+		video: '',
+		images: [
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-07-ps4-us-03oct16?$100px$'
+		],
+		secondImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-05-us-15jun15?$800px--t$'
 	},
 	{
 		id: 3,
@@ -88,7 +100,7 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 		frontImg:
 			'https://image.api.playstation.com/vulcan/img/rnd/202011/0713/WSZqsrnejjt85wYmUqeBQvMQ.png?w=440&thumb=false',
 		pageImg:
-			'https://image.api.playstation.com/vulcan/img/rnd/202010/2614/O2Z66UWrZH8zcejxopwWxhGu.png?w=1920',
+			'https://image.api.playstation.com/vulcan/img/rnd/202010/2614/O2Z66UWrZH8zcejxopwWxhGu.png?w=5000&thumb=false',
 		review: {
 			title: 'An authentic Spider-Man adventure',
 			description: `Sony Interactive Entertainment, Insomniac Games, and Marvel have teamed up to create an authentic Spider-Man adventure. This isn’t the Spider-Man you’ve met or ever seen before. This is an experienced Peter Parker who’s more masterful at fighting big crime in Marvel's New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of millions of New Yorkers rest upon his shoulders.`
@@ -114,6 +126,105 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 			'Swedish',
 			'Turkish'
 		],
-		video: 'https://youtu.be/G203e1HhixY'
+		video: '',
+		images: [
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-07-ps4-us-03oct16?$100px$'
+		],
+		secondImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-05-us-15jun15?$800px--t$'
+	},
+	{
+		id: 4,
+		name: 'The Last of Us Part ||',
+		slug: 'the-last-of-us-part',
+
+		type: 'action-game',
+		platforms: ['PS4'],
+		frontImg:
+			'https://image.api.playstation.com/vulcan/img/rnd/202010/2618/w48z6bzefZPrRcJHc7L8SO66.png',
+		pageImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-ii-desktop-banner-02-en-13nov20',
+		review: {
+			title: 'An authentic Spider-Man adventure',
+			description: `Sony Interactive Entertainment, Insomniac Games, and Marvel have teamed up to create an authentic Spider-Man adventure. This isn’t the Spider-Man you’ve met or ever seen before. This is an experienced Peter Parker who’s more masterful at fighting big crime in Marvel's New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of millions of New Yorkers rest upon his shoulders.`
+		},
+		price: 34.99,
+		publisher: 'Sony Interactive Entertainment Europe',
+		description: `Hunt your nightmares
+A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
+		voice: ['English', 'French(France)', 'German', 'Italian', 'Spanish'],
+		screenLanguages: [
+			'Danish',
+			'Dutch',
+			'English',
+			'Finnish',
+			'French(France)',
+			'German',
+			'Italian',
+			'Norwegian',
+			'Polish',
+			'Portuguese(Portugal)',
+			'Russian',
+			'Spanish',
+			'Swedish',
+			'Turkish'
+		],
+		video:
+			'https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/l/la/the-last-of-us-part-ii/videos/the-last-of-us-part-ii-live-video-block-01-ps4-us-23sep19.mp4',
+		images: [
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-07-ps4-us-03oct16?$100px$'
+		],
+		secondImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-05-us-15jun15?$800px--t$'
+	},
+	{
+		id: 5,
+		name: 'Horizon Zero Dawn',
+		slug: 'horizon-zero-dawn',
+
+		type: 'action-game',
+		platforms: ['PS4'],
+		frontImg:
+			'https://image.api.playstation.com/vulcan/img/rnd/202011/1018/9erXiwu0ozgKGPIUVTuy2siN.png',
+		pageImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-keyart-banner-02-pc-campaign-en-us-01jul20?$4000px--t$',
+		review: {
+			title: 'Earth is ours no more.',
+			description: `In an era where Machines roam the land and mankind is no longer the dominant species, a young hunter named Aloy embarks on a journey to discover her destiny.
+
+In a lush, post-apocalyptic world where nature has reclaimed the ruins of a forgotten civilization, pockets of humanity live on in primitive hunter-gatherer tribes. Their dominion over the new wilderness has been usurped by the Machines – fearsome mechanical creatures of unknown origin.`
+		},
+		price: 34.99,
+		publisher: 'Sony Interactive Entertainment Europe',
+		description: `Hunt your nightmares
+A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
+		voice: ['English', 'French(France)', 'German', 'Italian', 'Spanish'],
+		screenLanguages: [
+			'Danish',
+			'Dutch',
+			'English',
+			'Finnish',
+			'French(France)',
+			'German',
+			'Italian',
+			'Norwegian',
+			'Polish',
+			'Portuguese(Portugal)',
+			'Russian',
+			'Spanish',
+			'Swedish',
+			'Turkish'
+		],
+		video:
+			'https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/h/ho/horizon-zero-dawn/videos/horizon-zero-dawn-hero-video-section-impact-01-ps4-us-08feb17.mp4',
+		images: [
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-08-us-15jun15?$4000px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-04-us-15jun15?$2400px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-06-ps4-us-03oct16?$2400px$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-04-ps4-us-13jun16?$2400px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-07-ps4-us-13jun16?$2400px--t$'
+		],
+		secondImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-05-us-15jun15?$800px--t$'
 	}
 ]

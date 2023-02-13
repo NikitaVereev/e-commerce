@@ -2,7 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	images: {
-		domains: ['image.api.playstation.com']
+		domains: ['image.api.playstation.com', 'gmedia.playstation.com']
 	}
 }
 

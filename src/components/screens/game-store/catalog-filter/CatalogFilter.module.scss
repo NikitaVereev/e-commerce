@@ -1,0 +1,27 @@
+.itemWrapper {
+	@apply w-4/5 text-gray;
+	label {
+		flex-direction: row !important;
+		justify-content: flex-start !important;
+		font-weight: 700 !important;
+		.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+			padding: 0 !important;
+		}
+		.checkbox {
+			input:checked + svg {
+				path {
+					@apply bg-orange fill-gray p-0  bg-opacity-50 rounded-none fill-orange;
+				}
+			}
+			svg {
+				path {
+					@apply bg-orange fill-gray p-0  bg-opacity-50 rounded-none;
+				}
+			}
+		}
+	}
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+	padding: 0 !important;
+}

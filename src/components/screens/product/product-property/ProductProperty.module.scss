@@ -1,0 +1,35 @@
+.wrapper {
+	@apply w-full relative px-10 py-20  mx-auto rounded-3xl bg-opacity-30 relative mt-20 mb-20;
+	&:before {
+		content: '';
+		@apply absolute inset-0 w-full h-full bg-black bg-opacity-70;
+	}
+
+	.options {
+		@apply relative z-10 items-center flex flex-col gap-10 py-8 mx-auto  w-[80%] bg-black bg-opacity-40 rounded-3xl;
+		backdrop-filter: blur(5px);
+		> div {
+			@apply flex items-start;
+			> div {
+				@apply flex flex-wrap gap-3 p-4  w-[90%] bg-black rounded-r-2xl;
+				outline: 2px solid #e58e27;
+				outline-offset: 7px;
+				&:first-child {
+					@apply relative  z-10 text-orange w-[25%] text-center border-r-0 rounded-l-2xl rounded-r-none;
+				}
+				&:last-child {
+					@apply z-0 pl-8;
+				}
+			}
+		}
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

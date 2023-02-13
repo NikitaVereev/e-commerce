@@ -7,9 +7,9 @@
 	filter: blur(270px);
 }
 .wrapper {
-	@apply max-w-7xl mx-auto flex items-center justify-between;
+	@apply max-w-7xl mx-auto flex items-start gap-14;
 	.filter {
-		@apply flex flex-col gap-2 py-8 px-7 w-1/4  relative z-10 rounded-3xl;
+		@apply flex flex-col gap-2 py-8 px-7  min-w-[250px]  relative z-10 rounded-3xl;
 		backdrop-filter: blur(20px);
 		background: rgba(49, 49, 49, 0.5);
 		h2 {
@@ -24,7 +24,7 @@
 			@apply mb-4 text-[4vw] pb-2 border-b-2;
 		}
 		.catalog {
-			@apply flex gap-5 flex-wrap;
+			@apply flex gap-5 flex-wrap justify-start;
 		}
 	}
 }

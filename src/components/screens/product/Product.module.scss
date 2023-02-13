@@ -1,16 +1,19 @@
 .heading {
-	@apply relative w-[95%] mx-auto flex items-center rounded-2xl overflow-hidden;
-	height: calc(100vh - 87.2px);
+	@apply relative mb-20 -top-[87px]  w-full mx-auto flex items-end rounded-b-2xl overflow-hidden;
+	height: 100vh;
 	&::before {
 		content: '';
 		@apply absolute w-full h-full bg-black bg-opacity-30 z-10;
 	}
 
 	img {
-		@apply absolute h-full object-cover w-full;
+		@apply absolute h-full object-cover w-full pointer-events-none;
+	}
+	.video {
+		@apply absolute h-full object-cover w-full pointer-events-none;
 	}
 	.card {
-		@apply ml-20 relative z-10 w-2/5 p-8 bg-black rounded-2xl bg-opacity-70;
+		@apply ml-0 relative h-2/5 z-10 w-2/5 p-8 bg-black rounded-tr-2xl  bg-opacity-70;
 		backdrop-filter: blur(5px);
 		> h1 {
 			@apply text-gray text-5xl;
@@ -25,6 +28,12 @@
 			@apply flex gap-6 items-center;
 			> button {
 				@apply w-1/2;
+				&:nth-child(2) {
+					@apply w-fit px-1 py-0.5;
+					> svg {
+						@apply w-10 h-10;
+					}
+				}
 			}
 		}
 	}

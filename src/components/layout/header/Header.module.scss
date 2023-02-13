@@ -1,5 +1,6 @@
 .header {
-	@apply max-w-7xl mx-auto py-7 flex justify-between items-center text-gray;
+	@apply relative z-20 max-w-7xl  px-10 rounded-b-2xl mx-auto py-7 flex justify-between items-center text-gray bg-black bg-opacity-50;
+
 	.nav {
 		ul {
 			@apply flex gap-5 text-lg;
@@ -24,12 +25,13 @@
 					@apply right-0 h-full;
 				}
 				> div {
-					@apply absolute  w-1/3 min-h-full top-0 rounded-2xl -right-full z-40;
-					background: rgba(0, 0, 0, 0.3);
+					@apply fixed  w-1/3 min-h-full top-0 rounded-2xl -right-full z-40;
+
 					backdrop-filter: blur(20px);
 					transition: 0.5s ease;
 					.wrapper {
-						@apply p-5 h-full flex flex-col;
+						@apply p-5 h-auto flex flex-col;
+						backdrop-filter: blur(10px);
 						.popupTitle {
 							@apply flex justify-between pb-3 mb-8 border-gray;
 							border-bottom: 2px solid;

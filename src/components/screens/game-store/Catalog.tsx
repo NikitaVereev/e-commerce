@@ -42,7 +42,8 @@ const Catalog: FC<{ products: IProduct[] }> = ({ products }) => {
 
 	useEffect(() => {
 		applyFilters()
-	}, [categories, applyFilters])
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [categories])
 
 	return (
 		<div className={styles.wrapper}>
