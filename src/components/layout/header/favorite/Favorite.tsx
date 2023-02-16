@@ -1,7 +1,8 @@
+import Button from '@/src/components/ui/button/Button'
 import { favorite } from '@/src/data/favorite.data'
 import { FC, useState } from 'react'
 import { FaWindowClose } from 'react-icons/fa'
-import { RiHeart3Line } from 'react-icons/ri'
+import { FaHeart } from 'react-icons/fa'
 import styles from '../Header.module.scss'
 import FavoriteItem from './favorite-item/FavoriteItem'
 
@@ -13,10 +14,10 @@ const Favorite: FC = () => {
 	}
 	return (
 		<li className={openBasket ? styles.active : ''} onClick={handleClick}>
-			<button>
-				<RiHeart3Line />
-				<span>0</span>
-			</button>
+			<Button>
+				<FaHeart />
+				<span></span>
+			</Button>
 			<div>
 				<div className={styles.wrapper}>
 					<div className={styles.popupTitle}>

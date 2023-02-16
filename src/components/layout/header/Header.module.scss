@@ -1,26 +1,23 @@
 .header {
-	@apply relative z-20 max-w-7xl  px-10 rounded-b-2xl mx-auto py-7 flex justify-between items-center text-gray bg-black bg-opacity-50;
+	@apply relative z-20 w-full rounded-b-2xl mx-auto  flex justify-between items-center text-gray bg-header;
 
 	.nav {
 		ul {
-			@apply flex gap-5 text-lg;
+			@apply flex  w-full text-base;
 			li {
-				a {
-					@apply hover:text-orange;
-					transition: 0.5s ease;
-				}
-			}
-		}
-	}
-	.nav_user {
-		ul {
-			@apply flex gap-5 text-lg;
-			li {
+				@apply border px-6 text-gray uppercase flex items-center py-3 justify-center border-t-0 border-b-0 border-border border-solid;
 				button {
+					@apply w-auto;
 					svg {
-						@apply text-2xl;
+						@apply text-xl;
 					}
 				}
+				a {
+					.logo {
+						@apply w-32 h-16;
+					}
+				}
+
 				&.active > div {
 					@apply right-0 h-full;
 				}
@@ -37,17 +34,6 @@
 							border-bottom: 2px solid;
 							> h2 {
 								@apply font-bold;
-							}
-							> button {
-								> svg {
-									@apply text-gray font-bold cursor-pointer text-3xl;
-									transition: 0.5s ease;
-
-									&:hover {
-										@apply text-orange;
-										transform: scale(1.2);
-									}
-								}
 							}
 						}
 						.itemWrapper {
@@ -68,6 +54,9 @@
 							}
 						}
 					}
+				}
+				&.void {
+					@apply border-none;
 				}
 			}
 		}

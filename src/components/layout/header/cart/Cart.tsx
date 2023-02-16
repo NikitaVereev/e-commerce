@@ -2,7 +2,7 @@ import Button from '@/src/components/ui/button/Button'
 import { useTypedSelector } from '@/src/hooks/useTypedSelector'
 import { FC, useState } from 'react'
 import { FaWindowClose } from 'react-icons/fa'
-import { FiShoppingCart } from 'react-icons/fi'
+import { FaShoppingCart } from 'react-icons/fa'
 import styles from '../Header.module.scss'
 import CartItem from './cart-item/CartItem'
 
@@ -16,10 +16,10 @@ const Cart: FC = () => {
 
 	return (
 		<li className={openBasket ? styles.active : ''}>
-			<button onClick={() => setOpenBasket(!openBasket)}>
-				<FiShoppingCart />
-				<span>{state.length}</span>
-			</button>
+			<Button onClick={() => setOpenBasket(!openBasket)}>
+				<FaShoppingCart />
+				<span>{state.length === 0 ? '' : state.length}</span>
+			</Button>
 
 			<div>
 				<div className={styles.wrapper}>

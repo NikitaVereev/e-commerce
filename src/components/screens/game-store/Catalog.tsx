@@ -1,7 +1,10 @@
 import { filterList } from '@/src/data/categories.data'
 import { FC, useState, useEffect } from 'react'
 import { IProduct } from '../../types/product.types'
+import BreadCrumbs from './catalog-filter/bread-crumbs/BreadCrumbs'
 import CatalogFilter from './catalog-filter/CatalogFilter'
+import PopularFilter from './catalog-filter/popular-filter/PopularFilter'
+import TypeFilter from './catalog-filter/type-filter/TypeFilter'
 import CatalogItem from './catalog-item/CatalogItem'
 import styles from './GameStore.module.scss'
 
@@ -46,26 +49,29 @@ const Catalog: FC<{ products: IProduct[] }> = ({ products }) => {
 	}, [categories])
 
 	return (
-		<div className={styles.wrapper}>
-			<div className={styles.filter}>
-				<h2 className={styles.title}>Categories</h2>
-				<CatalogFilter
-					categories={categories}
-					changeChecked={handleChangeChecked}
-					platforms={filterList.platforms}
-				/>
-			</div>
-			<div className={styles.content}>
-				<h1 className={styles.title}>Games</h1>
-				<div className={styles.catalog}>
-					{resultsFound
-						? isProduct.map(product => (
-								<CatalogItem key={product.id} product={product} />
-						  ))
-						: 'GG'}
+		<>
+			<BreadCrumbs />
+			<div className={styles.wrapper}>
+				<div className={styles.filter}>
+					<CatalogFilter
+						categories={categories}
+						changeChecked={handleChangeChecked}
+						platforms={filterList.platforms}
+					/>
+				</div>
+				<div className={styles.content}>
+					<TypeFilter />
+					<PopularFilter />
+					<div className={styles.catalog}>
+						{resultsFound
+							? isProduct.map(product => (
+									<CatalogItem key={product.id} product={product} />
+							  ))
+							: 'GG'}
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 

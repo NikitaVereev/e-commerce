@@ -1,11 +1,14 @@
 import Link from 'next/link'
 import { FC, useState } from 'react'
 import styles from './Header.module.scss'
-
-import { RiHeart3Line } from 'react-icons/ri'
-import { CgClose } from 'react-icons/cg'
+import Image from 'next/image'
 import Cart from './cart/Cart'
 import Favorite from './favorite/Favorite'
+import cn from 'classnames'
+import Logo from '../../../assets/images/logo.svg'
+import Search from '../../ui/search/Search'
+import { FaUserAlt } from 'react-icons/fa'
+import Button from '../../ui/button/Button'
 
 const Header: FC = () => {
 	const [openFavorites, setOpenFavorites] = useState(false)
@@ -17,38 +20,55 @@ const Header: FC = () => {
 	const nav = [
 		{
 			name: 'Home',
-			link: '/'
+			link: '/',
+			icon: Logo
 		},
 		{
-			name: 'Streams',
-			link: '/streams'
+			name: 'Каталог',
+			link: '/catalog'
 		},
 		{
-			name: 'Game Store',
-			link: '/game-store'
+			name: 'Акции',
+			link: '/stocks'
 		},
 		{
-			name: 'News',
+			name: 'Предзаказ',
+			link: '/pre-order'
+		},
+		{
+			name: 'Новости',
 			link: '/news'
 		}
 	]
 
 	return (
 		<header className={styles.header}>
-			<nav className={styles.nav}>
+			<nav className={cn(styles.nav, 'wrapper')}>
 				<ul>
 					{nav.map((item, idx) => (
 						<li key={idx}>
-							<Link href={item.link}>{item.name}</Link>
+							<Link href={item.link}>
+								{item.icon !== undefined ? (
+									<Image
+										src={item.icon}
+										alt={item.name}
+										className={styles.logo}
+									/>
+								) : (
+									item.name
+								)}
+							</Link>
 						</li>
 					))}
-				</ul>
-			</nav>
-			<nav className={styles.nav_user}>
-				<ul>
-					<Cart />
+					<Search />
+
 					<Favorite />
-					<li></li>
+					<li>
+						<Button>
+							<FaUserAlt />
+						</Button>
+					</li>
+					<Cart />
 				</ul>
 			</nav>
 		</header>

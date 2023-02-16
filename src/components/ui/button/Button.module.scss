@@ -1,9 +1,14 @@
 .btn {
-	@apply bg-orange py-3 w-full rounded-3xl text-black font-bold border-none;
+	@apply bg-icon  py-3 px-3 flex items-center justify-center w-full rounded-2xl text-fill font-bold border-none;
 	transition: 0.5s ease;
+	outline: 2px solid #40296c;
+	outline-offset: 0;
 	&:hover {
-		@apply tracking-widest bg-black text-orange;
-		outline: 2px solid #e58e27;
+		@apply tracking-widest bg-black text-fill;
+		outline: 2px solid #40296c;
 		outline-offset: 5px;
+	}
+	> svg {
+		@apply fill-fill text-fill;
 	}
 }

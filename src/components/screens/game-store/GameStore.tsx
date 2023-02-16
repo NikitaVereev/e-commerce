@@ -8,8 +8,6 @@ const Store: FC<{ products: IProduct[] }> = ({ products }) => {
 	return (
 		<div className={styles.store}>
 			<Catalog products={products} />
-			<div className={styles.circle}></div>
-			<div className={styles.circle}></div>
 		</div>
 	)
 }

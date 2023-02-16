@@ -1,7 +1,12 @@
 import { FC } from 'react'
+import MainCarousel from './MainCarousel/MainCarousel'
 
 const Home: FC = () => {
-	return <div>Home</div>
+	return (
+		<>
+			<MainCarousel />
+		</>
+	)
 }
 
 export default Home

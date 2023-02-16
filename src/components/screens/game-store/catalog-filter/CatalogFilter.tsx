@@ -3,7 +3,6 @@ import { FC } from 'react'
 import styles from './CatalogFilter.module.scss'
 import { IFilter } from '../../../types/categories.interface'
 import Categories from './categories/Categories'
-import Platforms from './platforms/Platforms'
 
 interface IFilterList extends IFilter {
 	changeChecked: (x: number) => void
@@ -16,6 +15,7 @@ const CatalogFilter: FC<IFilterList> = ({
 }) => {
 	return (
 		<ul>
+			<h2>Фильтры</h2>
 			{categories.map(category => (
 				<Categories
 					key={category.id}
@@ -23,11 +23,6 @@ const CatalogFilter: FC<IFilterList> = ({
 					changeChecked={changeChecked}
 				/>
 			))}
-			{platforms.map(platform => (
-				<Platforms key={platform.id} platform={platform} />
-			))}
-
-			<Button>Apply Filters</Button>
 		</ul>
 	)
 }

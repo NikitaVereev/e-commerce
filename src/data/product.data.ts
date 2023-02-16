@@ -130,8 +130,7 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 		images: [
 			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-07-ps4-us-03oct16?$100px$'
 		],
-		secondImg:
-			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-05-us-15jun15?$800px--t$'
+		secondImg: ''
 	},
 	{
 		id: 4,
