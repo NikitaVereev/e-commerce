@@ -1,0 +1,47 @@
+.wrapper {
+	&:hover {
+		@apply p-0;
+		.description {
+			@apply px-3;
+		}
+		.image {
+			.buttons {
+				@apply opacity-100;
+			}
+		}
+	}
+	@apply flex flex-col mx-auto gap-5 relative min-w-[240px] max-w-[240px] w-[240px] p-3 bg-header border-solid border-border rounded-3xl;
+	transition: 0.5s ease;
+	.image {
+		@apply relative mx-auto rounded-3xl overflow-hidden;
+		> img {
+			@apply object-contain w-full h-full bg-center rounded-2xl pointer-events-none;
+		}
+		.buttons {
+			@apply opacity-0 p-2 bg-icon  bg-opacity-50 absolute top-0 w-full h-full flex flex-col justify-between items-end;
+			transition: 0.5s ease;
+			> button:first-child {
+				@apply w-fit;
+			}
+		}
+	}
+	.description {
+		transition: 0.5s ease;
+		> h4 {
+			@apply text-lg font-bold;
+		}
+		.price {
+			@apply flex items-center gap-6 py-3;
+			span {
+				@apply text-white text-sm opacity-40 line-through;
+				&:last-child {
+					@apply text-xs p-2 bg-border rounded-3xl opacity-100;
+					text-decoration: none;
+				}
+			}
+			p {
+				@apply text-white text-sm;
+			}
+		}
+	}
+}

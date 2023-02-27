@@ -10,6 +10,7 @@ const Cart: FC = () => {
 	const state = useTypedSelector(state => state.cart.items)
 	const [openBasket, setOpenBasket] = useState(false)
 	const totalPrice = state.reduce(
+		//@ts-ignore
 		(acc, item) => acc + item.product.price * item.quantity,
 		0
 	)
@@ -36,13 +37,7 @@ const Cart: FC = () => {
 					</div>
 					<div className={styles.totalPrice}>
 						<h3>
-							Total:{' '}
-							<span>
-								{new Intl.NumberFormat('en-US', {
-									style: 'currency',
-									currency: 'USD'
-								}).format(totalPrice)}
-							</span>
+							Total: <span>{totalPrice}</span>
 						</h3>
 						<Button onClick={() => {}}>To Pay</Button>
 					</div>

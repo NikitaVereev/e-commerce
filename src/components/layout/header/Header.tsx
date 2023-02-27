@@ -60,7 +60,7 @@ const Header: FC = () => {
 							</Link>
 						</li>
 					))}
-					<Search />
+					<Search placeholder='Поиск' />
 
 					<Favorite />
 					<li>

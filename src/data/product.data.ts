@@ -1,4 +1,5 @@
 import { IProduct } from '../components/types/product.types'
+import Bloodborne from '../../uploads/bloodborne.png'
 
 export const products: IProduct[] = [
 	{
@@ -9,13 +10,13 @@ export const products: IProduct[] = [
 		platforms: ['PS4'],
 		frontImg:
 			'https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png',
-		pageImg:
-			'https://gmedia.playstation.com/is/image/SIEPDC/spiderman-miles-morales-hero-03-en-20jul20',
+		pageImg: '/image/spider-man-miles-morales.png',
 		review: {
 			title: 'An authentic Spider-Man adventure',
 			description: `Sony Interactive Entertainment, Insomniac Games, and Marvel have teamed up to create an authentic Spider-Man adventure. This isn’t the Spider-Man you’ve met or ever seen before. This is an experienced Peter Parker who’s more masterful at fighting big crime in Marvel's New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of millions of New Yorkers rest upon his shoulders.`
 		},
-		price: 39,
+		price: 3999,
+		newPrice: 1999,
 		publisher: 'Sony Interactive Entertainment Europe',
 		description: `Hunt your nightmares
 A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
@@ -63,7 +64,8 @@ Joined by Six, the raincoat wearing hero from the original Little Nightmares, on
 
 Muster your courage and begin your journey in the face of terrible threats in a mission to stop the source of evil that’s spreading throughout the land.`
 		},
-		price: 29,
+		price: 1499,
+		newPrice: 999,
 		publisher: 'Sony Interactive Entertainment Europe',
 		description: `Hunt your nightmares
 A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
@@ -99,8 +101,7 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 		platforms: ['PS4'],
 		frontImg:
 			'https://image.api.playstation.com/vulcan/img/rnd/202011/0713/WSZqsrnejjt85wYmUqeBQvMQ.png?w=440&thumb=false',
-		pageImg:
-			'https://image.api.playstation.com/vulcan/img/rnd/202010/2614/O2Z66UWrZH8zcejxopwWxhGu.png?w=5000&thumb=false',
+		pageImg: '/image/bloodborne.png',
 		review: {
 			title: 'An authentic Spider-Man adventure',
 			description: `Sony Interactive Entertainment, Insomniac Games, and Marvel have teamed up to create an authentic Spider-Man adventure. This isn’t the Spider-Man you’ve met or ever seen before. This is an experienced Peter Parker who’s more masterful at fighting big crime in Marvel's New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of millions of New Yorkers rest upon his shoulders.`
@@ -141,8 +142,7 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 		platforms: ['PS4'],
 		frontImg:
 			'https://image.api.playstation.com/vulcan/img/rnd/202010/2618/w48z6bzefZPrRcJHc7L8SO66.png',
-		pageImg:
-			'https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-ii-desktop-banner-02-en-13nov20',
+		pageImg: '/image/the-last-of-us-part-two.png',
 		review: {
 			title: 'An authentic Spider-Man adventure',
 			description: `Sony Interactive Entertainment, Insomniac Games, and Marvel have teamed up to create an authentic Spider-Man adventure. This isn’t the Spider-Man you’ve met or ever seen before. This is an experienced Peter Parker who’s more masterful at fighting big crime in Marvel's New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of millions of New Yorkers rest upon his shoulders.`
@@ -185,8 +185,7 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 		platforms: ['PS4'],
 		frontImg:
 			'https://image.api.playstation.com/vulcan/img/rnd/202011/1018/9erXiwu0ozgKGPIUVTuy2siN.png',
-		pageImg:
-			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-keyart-banner-02-pc-campaign-en-us-01jul20?$4000px--t$',
+		pageImg: '/image/horizon-zero-dawn.png',
 		review: {
 			title: 'Earth is ours no more.',
 			description: `In an era where Machines roam the land and mankind is no longer the dominant species, a young hunter named Aloy embarks on a journey to discover her destiny.
@@ -216,6 +215,147 @@ A lone traveller. A cursed town. A deadly mystery that swallows everything it to
 		],
 		video:
 			'https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/h/ho/horizon-zero-dawn/videos/horizon-zero-dawn-hero-video-section-impact-01-ps4-us-08feb17.mp4',
+		images: [
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-08-us-15jun15?$4000px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-04-us-15jun15?$2400px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-06-ps4-us-03oct16?$2400px$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-04-ps4-us-13jun16?$2400px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-07-ps4-us-13jun16?$2400px--t$'
+		],
+		secondImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-05-us-15jun15?$800px--t$'
+	},
+	{
+		id: 6,
+		name: 'Atomic Heart',
+		slug: 'atomic-heart',
+
+		type: 'action-game',
+		platforms: ['PS4'],
+		frontImg: '/image/atomic-heart-main.png',
+		pageImg: '/image/atomic-heart.png',
+		review: {
+			title: 'Earth is ours no more.',
+			description: `In an era where Machines roam the land and mankind is no longer the dominant species, a young hunter named Aloy embarks on a journey to discover her destiny.
+
+In a lush, post-apocalyptic world where nature has reclaimed the ruins of a forgotten civilization, pockets of humanity live on in primitive hunter-gatherer tribes. Their dominion over the new wilderness has been usurped by the Machines – fearsome mechanical creatures of unknown origin.`
+		},
+		price: 34.99,
+		publisher: 'Sony Interactive Entertainment Europe',
+		description: `Hunt your nightmares
+A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
+		voice: ['English', 'French(France)', 'German', 'Italian', 'Spanish'],
+		screenLanguages: [
+			'Danish',
+			'Dutch',
+			'English',
+			'Finnish',
+			'French(France)',
+			'German',
+			'Italian',
+			'Norwegian',
+			'Polish',
+			'Portuguese(Portugal)',
+			'Russian',
+			'Spanish',
+			'Swedish',
+			'Turkish'
+		],
+		video: '',
+		images: [
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-08-us-15jun15?$4000px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-04-us-15jun15?$2400px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-06-ps4-us-03oct16?$2400px$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-04-ps4-us-13jun16?$2400px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-07-ps4-us-13jun16?$2400px--t$'
+		],
+		secondImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-05-us-15jun15?$800px--t$'
+	},
+	{
+		id: 7,
+		name: 'Dota 2',
+		slug: 'dota2',
+
+		type: 'action-game',
+		platforms: ['PC'],
+		frontImg: '/image/dota2-poster.png',
+		pageImg: '/image/dota2.png',
+		review: {
+			title: 'Earth is ours no more.',
+			description: `In an era where Machines roam the land and mankind is no longer the dominant species, a young hunter named Aloy embarks on a journey to discover her destiny.
+
+In a lush, post-apocalyptic world where nature has reclaimed the ruins of a forgotten civilization, pockets of humanity live on in primitive hunter-gatherer tribes. Their dominion over the new wilderness has been usurped by the Machines – fearsome mechanical creatures of unknown origin.`
+		},
+		price: 'Бесплатно',
+		publisher: 'Sony Interactive Entertainment Europe',
+		description: `Hunt your nightmares
+A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
+		voice: ['English', 'French(France)', 'German', 'Italian', 'Spanish'],
+		screenLanguages: [
+			'Danish',
+			'Dutch',
+			'English',
+			'Finnish',
+			'French(France)',
+			'German',
+			'Italian',
+			'Norwegian',
+			'Polish',
+			'Portuguese(Portugal)',
+			'Russian',
+			'Spanish',
+			'Swedish',
+			'Turkish'
+		],
+		video: '',
+		images: [
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-08-us-15jun15?$4000px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-04-us-15jun15?$2400px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-06-ps4-us-03oct16?$2400px$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-04-ps4-us-13jun16?$2400px--t$',
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-07-ps4-us-13jun16?$2400px--t$'
+		],
+		secondImg:
+			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-05-us-15jun15?$800px--t$'
+	},
+	{
+		id: 8,
+		name: 'Atomic Heart',
+		slug: 'atomic-heart',
+
+		type: 'action-game',
+		platforms: ['PS4'],
+		frontImg: '/image/atomic-heart-main.png',
+		pageImg: '/image/atomic-heart.png',
+		review: {
+			title: 'Earth is ours no more.',
+			description: `In an era where Machines roam the land and mankind is no longer the dominant species, a young hunter named Aloy embarks on a journey to discover her destiny.
+
+In a lush, post-apocalyptic world where nature has reclaimed the ruins of a forgotten civilization, pockets of humanity live on in primitive hunter-gatherer tribes. Their dominion over the new wilderness has been usurped by the Machines – fearsome mechanical creatures of unknown origin.`
+		},
+		price: 34.99,
+		publisher: 'Sony Interactive Entertainment Europe',
+		description: `Hunt your nightmares
+A lone traveller. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold – but just might save your skin...`,
+		voice: ['English', 'French(France)', 'German', 'Italian', 'Spanish'],
+		screenLanguages: [
+			'Danish',
+			'Dutch',
+			'English',
+			'Finnish',
+			'French(France)',
+			'German',
+			'Italian',
+			'Norwegian',
+			'Polish',
+			'Portuguese(Portugal)',
+			'Russian',
+			'Spanish',
+			'Swedish',
+			'Turkish'
+		],
+		video: '',
 		images: [
 			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-08-us-15jun15?$4000px--t$',
 			'https://gmedia.playstation.com/is/image/SIEPDC/horizon-zero-dawn-screen-04-us-15jun15?$2400px--t$',

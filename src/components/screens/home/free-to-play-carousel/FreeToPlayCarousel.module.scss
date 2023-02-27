@@ -1,0 +1,19 @@
+.wrapper {
+	@apply overflow-hidden;
+	> div {
+		@apply pt-5 flex items-center gap-4;
+		transition: 0.5s ease;
+	}
+	.heading {
+		@apply flex items-center justify-between;
+		> h2 {
+			@apply text-3xl font-bold;
+		}
+		.buttons {
+			@apply flex items-center gap-5 pr-5;
+			.disable {
+				@apply bg-black;
+			}
+		}
+	}
+}

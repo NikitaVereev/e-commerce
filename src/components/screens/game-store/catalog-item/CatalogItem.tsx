@@ -28,10 +28,8 @@ const CatalogItem: FC<{ product: IProduct }> = ({ product }) => {
 				<p>{product.platforms}</p>
 				<div className={styles.price}>
 					<p>
-						{new Intl.NumberFormat('en-US', {
-							style: 'currency',
-							currency: 'USD'
-						}).format(product.price)}
+						{product.price}
+						{product.price === 'Бесплатно' ? '' : 'p.'}
 					</p>
 					<Button onClick={() => addDoCart({ product, quantity: 1 })}>
 						Add

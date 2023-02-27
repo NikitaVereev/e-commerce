@@ -1,7 +1,8 @@
+import Error404 from '@/src/components/screens/error404/Error404'
 import { FC } from 'react'
 
-const Error404: FC = () => {
-	return <div>Error404</div>
+const Error404Page: FC = () => {
+	return <Error404 />
 }
 
-export default Error404
+export default Error404Page

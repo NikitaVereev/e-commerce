@@ -1,0 +1,66 @@
+.wrapper {
+	@apply relative w-full;
+	.slide {
+		@apply flex h-full justify-end items-center;
+		.image {
+			@apply w-3/4 h-full absolute inset-0 -z-10 overflow-hidden;
+
+			animation: fade 2s ease, zoom 5s ease;
+
+			&::before {
+				content: '';
+				@apply absolute w-full h-full;
+				background: linear-gradient(270deg, #020328, transparent);
+			}
+			> img {
+				@apply w-full h-full object-cover -z-20;
+			}
+		}
+		> div {
+			@apply flex justify-end;
+			.description {
+				@apply w-1/4 py-32;
+			}
+		}
+	}
+}
+
+.textWrapper {
+	@apply flex items-center gap-6 relative;
+	.description {
+		@apply flex flex-col gap-4;
+		animation: fade 4s ease;
+		> h3 {
+			@apply font-black text-2xl;
+		}
+		> p {
+			@apply font-normal text-white text-opacity-70;
+		}
+	}
+	.nextButton {
+		@apply w-fit h-fit;
+	}
+}
+.line {
+	@apply flex items-center gap-10 justify-center relative w-full bottom-0;
+	> span {
+		@apply block w-[40%] h-0.5 bg-white bg-opacity-50;
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes zoom {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}

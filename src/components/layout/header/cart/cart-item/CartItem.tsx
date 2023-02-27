@@ -18,12 +18,7 @@ const CartItem: FC<{ item: ICart }> = ({ item }) => {
 			/>
 			<div className={styles.itemInfo}>
 				<h4>{item.product.name}</h4>
-				<span>
-					{new Intl.NumberFormat('en-US', {
-						style: 'currency',
-						currency: 'USD'
-					}).format(item.product.price)}
-				</span>
+				<span>{item.product.price}</span>
 			</div>
 			<RiDeleteBin6Fill onClick={() => removeFromCart({ id: item.id })} />
 		</div>

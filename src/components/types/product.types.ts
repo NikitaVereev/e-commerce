@@ -12,7 +12,8 @@ export interface IProduct {
 	frontImg: string
 	pageImg: string
 	review: IReview
-	price: number
+	price: number | string
+	newPrice?: number
 	publisher: string
 	description?: string
 	voice: string[]
@@ -20,4 +21,8 @@ export interface IProduct {
 	video: string
 	images: string[]
 	secondImg: string
+}
+
+export interface IProductList {
+	products: IProduct[]
 }
