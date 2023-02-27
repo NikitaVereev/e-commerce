@@ -14,8 +14,8 @@ const CatalogItem: FC<{ product: IProduct }> = ({ product }) => {
 			<div key={product.id} className={styles.cartWrapper}>
 				<div className={styles.image}>
 					<Image
-						src={product.frontImg}
-						alt={product.name}
+						src={product.poster}
+						alt={product.title}
 						width={1000}
 						height={1000}
 					/>
@@ -24,7 +24,7 @@ const CatalogItem: FC<{ product: IProduct }> = ({ product }) => {
 						style={{ position: 'absolute', inset: 0 }}
 					/>
 				</div>
-				<h3>{product.name}</h3>
+				<h3>{product.title}</h3>
 				<p>{product.platforms}</p>
 				<div className={styles.price}>
 					<p>

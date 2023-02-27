@@ -9,7 +9,7 @@ import { BiRightArrow } from 'react-icons/bi'
 
 const Carousel: FC<IProductDetails> = ({ product }) => {
 	const [isActive, setIsActive] = useState(0)
-	const [length, setLength] = useState(product.images.length)
+	const [length, setLength] = useState(product.carousel.length)
 
 	const next = () => {
 		if (isActive < length - 1) {
@@ -29,11 +29,11 @@ const Carousel: FC<IProductDetails> = ({ product }) => {
 		<div className={styles.carouselWrapper}>
 			<div className={styles.mainImg}>
 				<Image
-					src={product.images[isActive]}
-					alt={product.name}
+					src={product.carousel[isActive]}
+					alt={product.title}
 					width={1000}
 					height={1000}
-					className={cn(product.images ? styles.active : '')}
+					className={cn(product.carousel ? styles.active : '')}
 				/>
 				<Button onClick={prev}>
 					<BiLeftArrow />
@@ -43,7 +43,7 @@ const Carousel: FC<IProductDetails> = ({ product }) => {
 				</Button>
 			</div>
 			<div className={styles.side}>
-				{product.images.map((item, idx: number) => (
+				{product.carousel.map((item, idx: number) => (
 					<div
 						key={idx}
 						className={cn(styles.sideImg, item[isActive] ? styles.active : '')}

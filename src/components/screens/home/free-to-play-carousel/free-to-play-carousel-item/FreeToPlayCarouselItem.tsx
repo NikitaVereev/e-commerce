@@ -12,8 +12,8 @@ const FreeToPlayCarouselItem: FC<{ product: IProduct }> = ({ product }) => {
 		<div className={styles.wrapper}>
 			<div className={styles.image}>
 				<Image
-					src={product.frontImg}
-					alt={product.name}
+					src={product.poster}
+					alt={product.title}
 					width={1000}
 					height={1000}
 				/>
@@ -27,7 +27,7 @@ const FreeToPlayCarouselItem: FC<{ product: IProduct }> = ({ product }) => {
 				</div>
 			</div>
 			<div className={styles.description}>
-				<h4>{product.name}</h4>
+				<h4>{product.title}</h4>
 				<div className={styles.price}>
 					<p>{product.price}</p>
 				</div>

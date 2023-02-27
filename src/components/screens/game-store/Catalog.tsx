@@ -32,7 +32,7 @@ const Catalog: FC<{ products: IProduct[] }> = ({ products }) => {
 
 		if (categoriesChecked.length) {
 			updatedList = updatedList.filter(item =>
-				categoriesChecked.includes(item.type)
+				categoriesChecked.includes(item.genres)
 			)
 		}
 

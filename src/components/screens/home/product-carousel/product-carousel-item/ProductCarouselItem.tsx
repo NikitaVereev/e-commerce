@@ -12,8 +12,8 @@ const ProductCarouselItem: FC<{ product: IProduct }> = ({ product }) => {
 		<div className={styles.wrapper}>
 			<div className={styles.image}>
 				<Image
-					src={product.frontImg}
-					alt={product.name}
+					src={product.poster}
+					alt={product.title}
 					width={1000}
 					height={1000}
 				/>
@@ -27,7 +27,7 @@ const ProductCarouselItem: FC<{ product: IProduct }> = ({ product }) => {
 				</div>
 			</div>
 			<div className={styles.description}>
-				<h4>{product.name}</h4>
+				<h4>{product.title}</h4>
 				<div className={styles.price}>
 					<span>{product.price} р.</span>
 					<p>{product.newPrice} р.</p>

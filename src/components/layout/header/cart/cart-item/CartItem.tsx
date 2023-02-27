@@ -11,13 +11,13 @@ const CartItem: FC<{ item: ICart }> = ({ item }) => {
 	return (
 		<div className={styles.item}>
 			<Image
-				src={item.product.frontImg}
-				alt={item.product.name}
+				src={item.product.poster}
+				alt={item.product.title}
 				width={100}
 				height={100}
 			/>
 			<div className={styles.itemInfo}>
-				<h4>{item.product.name}</h4>
+				<h4>{item.product.title}</h4>
 				<span>{item.product.price}</span>
 			</div>
 			<RiDeleteBin6Fill onClick={() => removeFromCart({ id: item.id })} />

@@ -7,33 +7,16 @@ const ProductProperty: FC<IProductDetails> = ({ product }) => {
 		<div
 			className={styles.wrapper}
 			style={{
-				background: `url(${product.secondImg})`,
+				background: `url(${product.bigPoster})`,
 				backgroundSize: 'cover',
 				backdropFilter: 'blur(20px)'
 			}}
 		>
 			<div className={styles.options}>
 				<div className='description'>
-					<div>Screen Language:</div>
-					<div>
-						{' '}
-						{product.screenLanguages.map((product, idx) => (
-							<p key={idx}>{product},</p>
-						))}
-					</div>
-				</div>
-				<div className='description'>
-					<div>Voice:</div>
-					<div>
-						{product.voice.map((product, idx) => (
-							<p key={idx}>{product},</p>
-						))}
-					</div>
-				</div>
-				<div className='description'>
 					<div>Genre:</div>
 					<div>
-						<p>{product.type}</p>
+						<p>{product.genres}</p>
 					</div>
 				</div>
 				<div className='description'>

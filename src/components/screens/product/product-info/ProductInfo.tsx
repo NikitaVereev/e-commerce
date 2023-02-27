@@ -7,12 +7,12 @@ const ProductInfo: FC<IProductDetails> = ({ product }) => {
 	return (
 		<div
 			className={styles.wrapper}
-			style={{ background: `url(${product.pageImg})`, backgroundSize: 'cover' }}
+			style={{
+				background: `url(${product.bigPoster})`,
+				backgroundSize: 'cover'
+			}}
 		>
-			<div className={styles.description}>
-				<h2 className='title'>{product.review.title}</h2>
-				<p className='description'>{product.review.description}</p>
-			</div>
+			<div className={styles.description}></div>
 			<Carousel product={product} />
 		</div>
 	)

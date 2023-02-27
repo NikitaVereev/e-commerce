@@ -1,26 +1,36 @@
 export interface IReview {
-	title: string
-	description: string
+	rating: number
+	review: string
+}
+
+export interface IEstimationsItem {
+	CPU: string
+	OZU: number
+	card: string
+	storage: number
+}
+
+export interface IEstimations {
+	min: IEstimationsItem
+	max: IEstimationsItem
 }
 
 export interface IProduct {
 	id: number
-	name: string
+	title: string
 	slug: string
-	type: string
+	genres: string[]
 	platforms: string[]
-	frontImg: string
-	pageImg: string
-	review: IReview
+	poster: string
+	bigPoster: string
+	estimation: IReview
 	price: number | string
-	newPrice?: number
+	newPrice: number
 	publisher: string
-	description?: string
-	voice: string[]
-	screenLanguages: string[]
-	video: string
-	images: string[]
-	secondImg: string
+	description: string
+	year: string
+	requirements: IEstimations[]
+	carousel: string[]
 }
 
 export interface IProductList {

@@ -1,6 +1,9 @@
 import Head from 'next/head'
 
 import Home from '@/src/components/screens/home/Home'
+import { GetStaticProps } from 'next'
+
+
 
 export default function HomePage() {
 	return (
@@ -14,4 +17,12 @@ export default function HomePage() {
 			<Home />
 		</>
 	)
+}
+
+export const getStaticProps:GetStaticProps = async() => {
+	return{
+		props: {
+
+		}
+	}
 }

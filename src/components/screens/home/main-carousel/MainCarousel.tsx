@@ -34,15 +34,15 @@ const MainCarousel: FC<IProductList> = ({ products }) => {
 					<div key={product.id} className={styles.slide}>
 						<div className={styles.image}>
 							<Image
-								alt={product.name}
-								src={product.pageImg}
+								alt={product.title}
+								src={product.bigPoster}
 								width={1000}
 								height={1000}
 							/>
 						</div>
 						<div className={cn('wrapper', styles.textWrapper)}>
 							<div className={styles.description}>
-								<h3>{product.name}</h3>
+								<h3>{product.title}</h3>
 								<p>{product.description}</p>
 								<h2>{product.price} р.</h2>
 								<Button className={styles.btn} onClick={() => {}}>

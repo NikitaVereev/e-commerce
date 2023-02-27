@@ -14,28 +14,10 @@ const Product: FC<IProductDetails> = ({ product }) => {
 	return (
 		<>
 			<div className={styles.heading}>
-				{product.video !== '' ? (
-					<video
-						muted
-						autoPlay
-						loop
-						className={styles.video}
-						webkit-playsinline='true'
-						data-poster={product.pageImg}
-						data-loaded='true'
-					>
-						<source
-							type='video/mp4'
-							data-src={product.video}
-							src={product.video}
-						/>
-					</video>
-				) : (
-					<Image src={product.pageImg} alt={product.name} layout='fill' />
-				)}
+				<Image src={product.bigPoster} alt={product.title} layout='fill' />
 
 				<div className={styles.card}>
-					<h1>{product.name}</h1>
+					<h1>{product.title}</h1>
 					<p className={styles.publisher}>{product.publisher}</p>
 					<p className={styles.platforms}>{product.platforms}</p>
 					<p>{product.price}</p>
