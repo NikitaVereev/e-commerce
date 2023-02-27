@@ -38,12 +38,7 @@ const Product: FC<IProductDetails> = ({ product }) => {
 					<h1>{product.name}</h1>
 					<p className={styles.publisher}>{product.publisher}</p>
 					<p className={styles.platforms}>{product.platforms}</p>
-					<p>
-						{new Intl.NumberFormat('en-US', {
-							style: 'currency',
-							currency: 'USD'
-						}).format(product.price)}
-					</p>
+					<p>{product.price}</p>
 					<div className={styles.buttons}>
 						<Button onClick={() => addDoCart({ product, quantity: 1 })}>
 							Add to Cart

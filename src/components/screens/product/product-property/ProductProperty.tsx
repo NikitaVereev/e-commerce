@@ -51,12 +51,7 @@ const ProductProperty: FC<IProductDetails> = ({ product }) => {
 				<div className='description'>
 					<div>Price:</div>
 					<div>
-						<p>
-							{new Intl.NumberFormat('en-US', {
-								style: 'currency',
-								currency: 'USD'
-							}).format(product.price)}
-						</p>
+						<p>{product.price}</p>
 					</div>
 				</div>
 			</div>
